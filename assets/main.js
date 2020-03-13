@@ -1,7 +1,11 @@
+// Hide single or multiple calcualtions inside tip calculation to display one or the other
+function resetTip() {
+    document.getElementById("single").style.display = "none";
+    document.getElementById("multiple").style.display = "none";
+}
+
 //Calulation for the Tip
 function calculateTip() {
-
-    resetTip();
 
     var billAmount = document.getElementById("amount").value;
     var tipPercentage = document.getElementById("tip").value;
@@ -45,11 +49,6 @@ function calculateTip() {
 
 resetTip();
 
-// Hide the single and multiple blocks
-function resetTip() {
-    document.getElementById("single").style.display = "none";
-    document.getElementById("multiple").style.display = "none";
-}
 
 
 // Creates the step though for the tabbed layout
@@ -126,6 +125,5 @@ function fixStepIndicator(nextTab) {
     }
     //... and adds the "active" class to the current step:
     displayTab[nextTab].className += " active";
-
-
+    
 }
