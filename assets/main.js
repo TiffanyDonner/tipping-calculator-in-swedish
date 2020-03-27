@@ -1,5 +1,5 @@
 // Hide single or multiple calcualtions inside tip calculation to display one or the other
-function resetTip() {
+function hideTip() {
     document.getElementById("single").style.display = "none";
     document.getElementById("multiple").style.display = "none";
 }
@@ -11,15 +11,9 @@ function calculateTip() {
     var tipPercentage = document.getElementById("tip").value;
     var numberOfPeople = document.getElementById("numberPeople").value;
 
-    // Validate the bill amount field.
-    if (billAmount === "") {
-        alert("Please enter bill amount.");
-        return;
-    }
-
     // Calculate the total tip.
     function tipCalc() {
-        let tipTotal = ((billAmount * 100) * tipPercentage) / 100;
+        let tipTotal = (billAmount * tipPercentage);
         tipTotal = tipTotal.toFixed(2);
         return tipTotal;
     }
@@ -47,7 +41,7 @@ function calculateTip() {
     }
 }
 
-resetTip();
+hideTip();
 
 
 
