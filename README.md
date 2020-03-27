@@ -43,6 +43,9 @@ The Tip Calculator takes out the guesswork and the math by walking the user thro
     - The project uses **Javascript** to calculate and navigate the application.
 
 ## Testing
+
+## Deployment
+In GitHub, I navigated to the [repository](https://github.com/TiffanyDonner/tipping-calculator-in-swedish/) and clicked Settings. Within Settings, I navigated to the Source section within the Github Pages section. From the dropdown menu, selected master branch and then clicked Save. Git hub created a [link](https://tiffanydonner.github.io/tipping-calculator-in-swedish/) to where the site is hosted/published.
   
 ## Credits
 Calculator code guide:
