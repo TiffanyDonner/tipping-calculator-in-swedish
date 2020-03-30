@@ -1,101 +1,103 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<head> 
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<meta http-equiv="X-UA-Compatible" content="ie=edge">
-	<title>Tip Calculator for Swedes</title>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Tip Calculator for Swedes</title>
     <!--Adds favicon to browser window-->
-    <link rel="shortcut icon" type="image/x-icon" href="assets/images/favicon.ico"/>
+    <link rel="shortcut icon" type="image/x-icon" href="assets/images/favicon.ico" />
     <!--Link to css style sheet-->
-	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
     <!--Link to google fonts-->
     <link href="https://fonts.googleapis.com/css?family=Playfair+Display|Source+Sans+Pro&display=swap" rel="stylesheet">
-	<!--Link to money sign in h1 header-->
+    <!--Link to money sign in h1 header-->
     <script src="https://kit.fontawesome.com/5bc0263873.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
 
-    <!--Container for application-->
     <div class="container">
-	<!--Form inside container-->
-    <!--Header for application-->
-		<header>
-			<h1>
+        <!--Header for application-->
+        <header>
+            <h1>
 				<i class="fas fa-dollar-sign"></i> Tip Calculator
 			</h1>
             <h3>for Swedes</h3>
-		</header>
-    <form id="tipForm">
-        
+        </header>
+        <!--Form inside container-->
+        <form id="tipForm">
+            <!-- One "tab" for each step in the form: -->
+            <div class="tab">How much is your bill? Tipping is not mandatory, however in the United States the staff relys on tips for their income...
+                <p class="field">
+                    <input type="number" id="amount" placeholder="$ Bill Amount">
+                </p>
+            </div>
 
-		<!-- One "tab" for each step in the form: -->
-		<div class="tab">How much is your bill? Tipping is not mandatory, however in the United States the staff relys
-			on tips for their income...
-			<p class="field"><input type="number" id="amount" placeholder="$ Bill Amount"></p>
-		</div>
+            <div class="tab">How was the service? The tip is related only to the person serving you. If you ever returned would you ask for the same server...
+                <p>
+                    <select class="field" id="tip">
+                        <option value="0.05">5% Never returning!</option>
+                        <option value="0.1">10% Only if I had no choice.</option>
+                        <option value="0.15">15% Maybe. They were nice.</option>
+                        <option value="0.2">20% Yes. They were good.</option>
+                        <option value="0.3">30% They were great!</option>
+                        <option value="0.4">40% Outstanding! Remember me!</option>
+                    </select>
+                </p>
+            </div>
 
-		<div class="tab">How was the service? The tip is related only to the person serving you. If you ever returned
-			would you ask for the same server...
-			<p><select class="field" id="tip">
-				<option value="0.05">5% Never returning!</option>
-				<option value="0.1">10% Only if I had no choice.</option>
-				<option value="0.15">15% Maybe. They were nice.</option>
-				<option value="0.2">20% Yes. They were good.</option>
-				<option value="0.3">30% They were great!</option>
-                <option value="0.4">40% Outstanding! Remember me!</option>
-			</select></p>
-		</div>
+            <div class="tab">How many people are sharing the bill? If sharing, the calculator will split the tip and bill up evenly between the number of people.
+                <p>
+                    <select class="field" id="numberPeople">
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                        <option value="6">6</option>
+                        <option value="7">7</option>
+                        <option value="8">8</option>
+                        <option value="9">9</option>
+                        <option value="10">10</option>
+                        <option value="11">11</option>
+                        <option value="12">12</option>
+                    </select>
+                </p>
+            </div>
 
-		<div class="tab">How many people are sharing the bill? If sharing, the calculator will split the tip and bill up evenly between the number of people. 
-			<p> <select class="field" id="numberPeople">
-				<option value="1">1</option>
-				<option value="2">2</option>
-				<option value="3">3</option>
-				<option value="4">4</option>
-				<option value="5">5</option>
-				<option value="6">6</option>
-				<option value="7">7</option>
-				<option value="8">8</option>
-				<option value="9">9</option>
-				<option value="10">10</option>
-				<option value="11">11</option>
-				<option value="12">12</option>
-			</select></p>
-		</div>
+            <div class="tab">
+                <div id="single">
+                    <p><b>Tip: $<span id="tipAmount"></span></b></p>
+                    <p><b>Total: $<span id="billTotal"></span></b></p>
+                </div>
+                <div id="multiple">
+                    <p><b>Tip Per Person: $<span id="totalTipMultiple"></span></b></p>
+                    <p><b>Total Per Person: $<span id="totalAmountEach"></span></b></p>
+                    <p><b>Bill Total: $<span id="billTotalmultiple"></span></b></p>
+                </div>
+            </div>
+            <!--Displayed buttons for next and previous-->
+            <div>
+                <div>
+                    <button class="buttons" type="button" id="prevBtn" onclick="nextPrev(-1)">Previous</button>
+                    <button class="buttons" type="button" id="nextBtn" onclick="nextPrev(1)">Next</button>
+                </div>
+            </div>
 
-		<div class="tab">
-			<div id="single">
-				<p><b>Tip: $<span id="tipAmount"></span></b></p>
-				<p><b>Total: $<span id="billTotal"></span></b></p>
-			</div>
-			<div id="multiple">
-				<p><b>Tip Per Person: $<span id="totalTipMultiple"></span></b></p>
-				<p><b>Total Per Person: $<span id="totalAmountEach"></span></b></p>
-				<p><b>Bill Total: $<span id="billTotalmultiple"></span></b></p>
-			</div>
-		</div>
-        <!--Displayed buttons for next and previous-->
-		<div>
-			<div>
-				<button class="calc" type="button" id="prevBtn" onclick="nextPrev(-1)">Previous</button>
-				<button class="calc" type="button" id="nextBtn" onclick="nextPrev(1)">Next</button>
-			</div>
-		</div>
+        </form>
 
-	</form>
-   
-    <!-- Circles which indicates the steps of the form: -->
-		<navigation style="text-align:center;margin-top:40px;">
-			<span class="step"></span>
-			<span class="step"></span>
-			<span class="step"></span>
-			<span class="step"></span>
-		</navigation>
-         </div>
-	<script src="assets/js/main.js"></script>
+        <!-- Circles which indicates the steps of the form: -->
+        <navigation style="text-align:center;margin-top:20px;">
+            <span class="step"></span>
+            <span class="step"></span>
+            <span class="step"></span>
+            <span class="step"></span>
+        </navigation>
+    </div>
+
+    <script src="assets/js/main.js"></script>
 </body>
 
 </html>
