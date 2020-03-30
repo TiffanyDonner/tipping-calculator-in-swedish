@@ -1,5 +1,6 @@
 body {
-    background:#ffcd00;
+    background-image: linear-gradient(to bottom right, #002868, #f1f1f1, #bf0a30);
+    
     color: #fff;
     display: flex;
     justify-content: center;
@@ -50,15 +51,15 @@ p {
     justify-content: center;
 }
 
-.calc {
+.buttons {
   margin: 10px;
   padding: 10px 15px;
-  font-size: 16px;
-  color: #000;
+  font-size: 1.17em;
+  color:#004b87;
   text-align: center;
   font-weight: bold;
   letter-spacing: 1px;
-  background-image: linear-gradient(to bottom right, #002868, #f1f1f1, #bf0a30);  
+  background:rgb(255,205,0);  
   cursor: pointer;
   border-radius: 5px;
   box-shadow: 0 5px 10px 0 black;
@@ -111,5 +112,5 @@ input.invalid {
 
 /* Mark the steps that are finished and valid: */
 .step.finish {
-  background-color: #ffcd00;
+  background-color: rgb(255,205,0);
 }
