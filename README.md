@@ -91,6 +91,7 @@ During testing the users found the application easy to get to and navigate throu
     -iPhone 10
 
 ## GitHub Deployment with GitHub Pages
+
 ###Create a new [repository](https://github.com/TiffanyDonner/tipping-calculator-in-swedish/). 
 1. In the upper right corner use the + to bring down the menu. And select Repository.
 2. Select your account from the owner dropdown menu.
@@ -116,8 +117,8 @@ During testing the users found the application easy to get to and navigate throu
 Background Image:
 https://www.pickpik.com/overhead-shot-plates-food-dinner-setting-76669
 
-Calculator code guide:
+Javascript Tip Calculator - Carolyn Hemmings (CodePen)
 https://codepen.io/cphemm/pen/reNwWd
 
-Form Wizard:
+How TO - Form with Multiple Steps (w3 Schools):
 https://www.w3schools.com/howto/howto_js_form_steps.asp
