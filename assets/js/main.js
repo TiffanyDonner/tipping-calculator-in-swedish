@@ -119,5 +119,5 @@ function fixStepIndicator(nextTab) {
     }
     /*... and adds the "active" class to the current step:*/
     displayTab[nextTab].className += " active";
-    
+
 }
