@@ -7,13 +7,14 @@
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
 	<title>Tip Calculator for Swedes</title>
     <link rel="shortcut icon" type="image/x-icon" href="assets/images/favicon.ico"/>
-	<link rel="stylesheet" type="text/css" href="assets/style.css">
+	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Playfair+Display|Source+Sans+Pro&display=swap" rel="stylesheet">
 	<script src="https://kit.fontawesome.com/5bc0263873.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
 
-	<form id="tipForm" action="">
+	<form id="tipForm">
 
 		<header>
 			<h1>
@@ -25,7 +26,7 @@
 		<!-- One "tab" for each step in the form: -->
 		<div class="tab">How much is your bill? Tipping is not mandatory, however in the United States the staff relys
 			on tips for their income...
-			<p><input type="number" id="amount" placeholder="$ Bill Amount" maxlength="9"></p>
+			<p><input type="number" id="amount" placeholder="$ Bill Amount"></p>
 		</div>
 
 		<div class="tab">How was the service? The tip is related only to the person serving you. If you ever returned
@@ -76,15 +77,16 @@
 			</div>
 		</div>
 
-		<!-- Circles which indicates the steps of the form: -->
+		
+	</form>
+    <!-- Circles which indicates the steps of the form: -->
 		<navigation style="text-align:center;margin-top:40px;">
 			<span class="step"></span>
 			<span class="step"></span>
 			<span class="step"></span>
 			<span class="step"></span>
 		</navigation>
-	</form>
-	<script src="assets/main.js"></script>
+	<script src="assets/js/main.js"></script>
 </body>
 
 </html>
