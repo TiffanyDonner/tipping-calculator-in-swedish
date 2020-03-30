@@ -1,4 +1,9 @@
 body {
+     background: url(https://i1.pickpik.com/photos/459/909/203/food-drink-food-preview.jpg) no-repeat center center fixed; 
+     -webkit-background-size: cover;
+     -moz-background-size: cover;
+     -o-background-size: cover;
+     background-size: cover;
      color: #fff;
      display: flex;
      justify-content: center;
