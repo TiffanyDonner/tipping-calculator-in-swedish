@@ -22,22 +22,24 @@
         <!--Header for application-->
         <header>
             <h1>
-				<i class="fas fa-dollar-sign"></i> Tip Calculator
+				<i class="fas fa-dollar-sign"></i> 
+                Tip Calculator
 			</h1>
             <h3>for Swedes</h3>
         </header>
         <!--Form inside container-->
         <form id="tipForm">
             <!-- One "tab" for each step in the form: -->
+            <!-- Bill Amount Tab-->
             <div class="tab">How much is your bill? Tipping is not mandatory, however in the United States the staff relys on tips for their income...
                 <p class="field">
-                    <input type="number" id="amount" placeholder="$ Bill Amount">
+                    <input type="number" id="amount" placeholder="$ Bill Amount"><!-- Number Placeholder to enter Bill amount-->
                 </p>
             </div>
-
+            <!-- Tip Tab-->
             <div class="tab">How was the service? The tip is related only to the person serving you. If you ever returned would you ask for the same server...
                 <p>
-                    <select class="field" id="tip">
+                    <select class="field" id="tip"><!-- Drop down selector with pre determined percentages-->
                         <option value="0.05">5% Never returning!</option>
                         <option value="0.1">10% Only if I had no choice.</option>
                         <option value="0.15">15% Maybe. They were nice.</option>
@@ -47,10 +49,10 @@
                     </select>
                 </p>
             </div>
-
+            <!-- Number of People Tab-->
             <div class="tab">How many people are sharing the bill? If sharing, the calculator will split the tip and bill up evenly between the number of people.
                 <p>
-                    <select class="field" id="numberPeople">
+                    <select class="field" id="numberPeople"><!-- Dropdown with choices for how many peoplethe bill willbe split with-->
                         <option value="1">1</option>
                         <option value="2">2</option>
                         <option value="3">3</option>
@@ -66,16 +68,16 @@
                     </select>
                 </p>
             </div>
-
+            <!-- HTML for final tab with totals will display amounts determined by JS-->
             <div class="tab">
                 <div id="single">
-                    <p><b>Tip: $<span id="tipAmount"></span></b></p>
-                    <p><b>Total: $<span id="billTotal"></span></b></p>
+                    <p><b class="totals">Tip: $<span id="tipAmount"></span></b></p>
+                    <p><b class="totals">Total: $<span id="billTotal"></span></b></p>
                 </div>
                 <div id="multiple">
-                    <p><b>Tip Per Person: $<span id="totalTipMultiple"></span></b></p>
-                    <p><b>Total Per Person: $<span id="totalAmountEach"></span></b></p>
-                    <p><b>Bill Total: $<span id="billTotalmultiple"></span></b></p>
+                    <p><b class="totals">Tip Per Person: $<span id="totalTipMultiple"></span></b></p>
+                    <p><b class="totals">Total Per Person: $<span id="totalAmountEach"></span></b></p>
+                    <p><b class="totals">Bill Total: $<span id="billTotalmultiple"></span></b></p>
                 </div>
             </div>
             <!--Displayed buttons for next and previous-->
