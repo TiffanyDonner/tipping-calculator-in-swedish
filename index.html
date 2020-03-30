@@ -6,23 +6,30 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
 	<title>Tip Calculator for Swedes</title>
+    <!--Adds favicon to browser window-->
     <link rel="shortcut icon" type="image/x-icon" href="assets/images/favicon.ico"/>
+    <!--Link to css style sheet-->
 	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+    <!--Link to google fonts-->
     <link href="https://fonts.googleapis.com/css?family=Playfair+Display|Source+Sans+Pro&display=swap" rel="stylesheet">
-	<script src="https://kit.fontawesome.com/5bc0263873.js" crossorigin="anonymous"></script>
+	<!--Link to money sign in h1 header-->
+    <script src="https://kit.fontawesome.com/5bc0263873.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
 
+    <!--Container for application-->
     <div class="container">
-	<form id="tipForm">
-
+	<!--Form inside container-->
+    <!--Header for application-->
 		<header>
 			<h1>
 				<i class="fas fa-dollar-sign"></i> Tip Calculator
 			</h1>
             <h3>for Swedes</h3>
 		</header>
+    <form id="tipForm">
+        
 
 		<!-- One "tab" for each step in the form: -->
 		<div class="tab">How much is your bill? Tipping is not mandatory, however in the United States the staff relys
@@ -32,7 +39,7 @@
 
 		<div class="tab">How was the service? The tip is related only to the person serving you. If you ever returned
 			would you ask for the same server...
-			<p class="field"><select id="tip">
+			<p><select class="field" id="tip">
 				<option value="0.05">5% Never returning!</option>
 				<option value="0.1">10% Only if I had no choice.</option>
 				<option value="0.15">15% Maybe. They were nice.</option>
@@ -43,7 +50,7 @@
 		</div>
 
 		<div class="tab">How many people are sharing the bill? If sharing, the calculator will split the tip and bill up evenly between the number of people. 
-			<p class="field"> <select id="numberPeople">
+			<p> <select class="field" id="numberPeople">
 				<option value="1">1</option>
 				<option value="2">2</option>
 				<option value="3">3</option>
