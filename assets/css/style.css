@@ -1,6 +1,6 @@
 body {
     background-image: linear-gradient(to bottom right, #002868, #f1f1f1, #bf0a30);
-    
+    background-size: cover;
     color: #fff;
     display: flex;
     justify-content: center;
