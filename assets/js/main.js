@@ -1,6 +1,6 @@
-/* Hide single or multiple calcualtions inside tip calculation to display one or the other*/
+/*Javascript Tip Calculator - Carolyn Hemmings (CodePen)*/
+/* Hide tip amount on load*/
 function hideTip() {
-    /* Pull either single or double for last tab */
     document.getElementById("single").style.display = "none";
     document.getElementById("multiple").style.display = "none";
 }
@@ -17,33 +17,30 @@ function calculateTip() {
     /*keep only 2 decimal places*/
     tipTotal = tipTotal.toFixed(2);
 
-    /* Call tipCalc() function.*/
-    let totalTip = tipCalc();
-
+    /*If there is more than one person display (multiple). Divide bill amount and tip total by the number of people. */
     if (numberOfPeople > 1) {
         document.getElementById("multiple").style.display = "block";
         let bill = (billAmount / numberOfPeople);
-        let tip = (totalTip / numberOfPeople);
+        let tip = (tipTotal / numberOfPeople);
         document.getElementById("totalTipMultiple").innerHTML = tip.toFixed(2);
 
         let amountEach = parseFloat(bill) + parseFloat(tip);
         document.getElementById("totalAmountEach").innerHTML = amountEach.toFixed(2);
 
-        let multipleTotal = parseFloat(billAmount) + parseFloat(totalTip);
+        let multipleTotal = parseFloat(billAmount) + parseFloat(tipTotal);
         document.getElementById("billTotalmultiple").innerHTML = multipleTotal.toFixed(2);
 
     } else {
         document.getElementById("single").style.display = "block";
-        let singleTotal = (parseFloat(billAmount) + parseFloat(totalTip));
-        document.getElementById("tipAmount").innerHTML = totalTip;
+        let singleTotal = (parseFloat(billAmount) + parseFloat(tipTotal));
+        document.getElementById("tipAmount").innerHTML = tipTotal;
         document.getElementById("billTotal").innerHTML = singleTotal.toFixed(2);
     }
 }
 
 hideTip();
 
-
-
+/*How TO - Form with Multiple Steps (w3 Schools)*/
 /* Creates the step though for the tabbed layout*/
 var currentTab = 0; /* This is a varible and needs to be changed. Current tab is set to be the first tab (0)*/
 showTab(currentTab); /* Display the current tab*/
