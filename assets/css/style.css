@@ -1,79 +1,86 @@
+/* Style for the entire body of the page */
 body {
-     background: url(https://i1.pickpik.com/photos/459/909/203/food-drink-food-preview.jpg) no-repeat center center fixed; 
+     display: flex; /* Reponsive layout structure*/
+     flex-direction: row; /* Vertical row */
+     justify-content: center; /* Move content to center*/
+     align-items: center; /* Centers items to the middle of section*/
+     background: url(https://i1.pickpik.com/photos/459/909/203/food-drink-food-preview.jpg) no-repeat center center fixed; /* Background image*/
      -webkit-background-size: cover;
      -moz-background-size: cover;
      -o-background-size: cover;
-     background-size: cover;
-     color: #fff;
-     display: flex;
-     justify-content: center;
-     align-items: center;
-     font-family: 'Source Sans Pro', sans-serif;
-     font-size: 1.2em;
-     text-align: center;
+     background-size: cover; /* Image to cover entire body of page */
+     color: #fff; /* Default font color*/
+     font-family: 'Source Sans Pro', sans-serif; /* google font*/
+     font-size: 1.2em; /* Default body text size*/
+     text-align: center; /* align all text to to the center*/
 }
+/* Style heading and sub-heading */
  h1, h3 {
-     text-align: center;
-     font-family: 'Playfair Display', serif;
-     margin: 2px;
+     margin: 2px; /* Added space outside the border of heading tags*/
+     font-family: 'Playfair Display', serif; /* google font*/
 }
+/* Style p elements */
  p {
-     display: flex;
+     display: flex; /* Reponsive layout structure*/
 }
+/* Style header */
  header{
-     color:#004b87;
-     width: 100%;
-     background:rgb(255,205,0); 
-     padding: 15px 0px;
-     margin: 25px 0px;
- }
+     width: 100%; /* Full width background-color*/
+     padding: 15px 0px; /* Space added inside the border*/
+     margin: 25px 0px; /* Space added outside the border*/
+     background:rgb(255,205,0); /* Heading text background color*/
+     color:#004b87; /* Default font color*/
+}
+ /* Style container surrounding entire application */
  .container {
-     display: flex;
-     flex-direction: column;
-     align-items: center;
-     width: 350px;
-     background-color: #004b87;
-     border-radius: 5px;
-     box-shadow: 0 5px 10px 0 black;
-     padding-bottom: 20px;
+     display: flex; /* Reponsive layout structure*/
+     flex-direction: column; /* Horizontal flex direction*/
+     align-items: center; /* Centers items to the middle of section*/
+     width: 350px; /* Width of container*/
+     padding-bottom: 20px; /* Space added inside the border*/
+     background-color: #004b87; /* Background color of container*/
+     border-radius: 5px; /* Adds a radius to border of container */
+     box-shadow: 0 5px 10px 0 black; /* box-shadow: adds a shadow that extends from top, right, bottom, left */
 }
 /* Style the form */
  #tipForm {
-     display: flex;
-     flex-direction: column;
-     align-items: center;
+     display: flex; /* Reponsive layout structure*/
+     flex-direction: column; /* Verticle flex direction */
+     align-items: center; /* Centers items to the middle of section*/
 }
  .field {
-     height: 40px;
-     width: 100%;
-     font-size: 0.9em;
-     border-radius: 5px;
-     justify-content: center;
+     justify-content: center; /* Move content to center*/
+     height: 40px; /* Height of field*/
+     width: 100%; /* Full width field */
+     font-size: 0.9em; /* Text size of entry field*/
+     border-radius: 5px; /* Adds a radius to border of fields */
 }
+/* Button to navigate back and forth between tabs */
  .buttons {
-     margin: 10px;
-     padding: 10px 15px;
-     font-size: 1.17em;
-     color:#004b87;
+     margin: 10px; /* Added space outside the border*/
+     padding: 10px 15px; /* Space added inside the border*/
+     color:#004b87; /* Default font color*/
+     background:rgb(255,205,0); /* background-color of buttons*/
+     font-size: 1.17em; /* Text size inside buttons*/
      text-align: center;
      font-weight: bold;
      letter-spacing: 1px;
-     background:rgb(255,205,0);
      cursor: pointer;
-     border-radius: 5px;
+     border-radius: 5px; /* Adds a radius to border of button */
      box-shadow: 0 5px 10px 0 black;
 }
+/* Totals displayed on last tab*/
  #single, #multiple {
-     margin: 30px 0;
-     font-size: 1.17em;
+     margin: 30px 0px 50px 0px; /* Added space outside the border*/
+     font-size: 1.17em; /* Text size for displayed totals*/
 }
 /* Style the input fields */
  input {
      width: 80%;
-     height: 30px;
+     height: 30px; /* Height of input*/
      background-color: #ffffff;
-     border-radius: 5px;
-     font-size: 1.17em;
+     border-radius: 5px; /* Adds a radius to border input field */
+     font-size: 1.17em; /* Text size of input field*/
 }
 /* Mark input boxes that gets an error on validation: */
  input.invalid {
@@ -81,18 +88,22 @@ body {
 }
 /* Hide all steps by default: */
  .tab {
-     display: none;
-     max-width: 90%;
-     margin-top: 15px;
+     display: none; /* Hide and show elements without deleting and recreating them*/
+     max-width: 90%; /* Tab will not exceed 90% of container */
+     margin-top: 15px; 
+}
+/* Navigation buttons*/
+.buttons {
+    margin-bottom: 5px;
 }
 /* Make circles that indicate the steps of the form: */
  .step {
-     height: 15px;
-     width: 15px;
+     height: 15px; /* Height of circle in steps*/
+     width: 15px; /* Width of circle in steps*/
      margin: 0 2px;
      background-color: #ffffff;
      border: none;
-     border-radius: 50%;
+     border-radius: 50%; /* Radius is added to create circle */
      display: inline-block;
      opacity: 0.5;
 }

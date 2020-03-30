@@ -1,22 +1,21 @@
 /* Hide single or multiple calcualtions inside tip calculation to display one or the other*/
 function hideTip() {
+    /* Pull either single or double for last tab */
     document.getElementById("single").style.display = "none";
     document.getElementById("multiple").style.display = "none";
 }
 
 /*Calulation for the Tip*/
 function calculateTip() {
-
+    /* Pull values entered in fields by id and let them be variables*/
     let billAmount = document.getElementById("amount").value;
     let tipPercentage = document.getElementById("tip").value;
     let numberOfPeople = document.getElementById("numberPeople").value;
 
     /* Calculate the total tip.*/
-    function tipCalc() {
-        let tipTotal = (billAmount * tipPercentage);
-        tipTotal = tipTotal.toFixed(2);
-        return tipTotal;
-    }
+    let tipTotal = (billAmount * tipPercentage);
+    /*keep only 2 decimal places*/
+    tipTotal = tipTotal.toFixed(2);
 
     /* Call tipCalc() function.*/
     let totalTip = tipCalc();
