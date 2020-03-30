@@ -17,17 +17,29 @@ p {
     
 }
 
+.container {
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 300px;
+  margin: 30px;
+    padding: 30px;
+  background-color: #004b87;
+  border-radius: 5px;
+  box-shadow: 0 5px 10px 0 black;
+}
+
 /* Style the form */
 #tipForm {
   margin: 25px;
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 300px;
-  padding: 30px;
-  background-color: #004b87;
-  border-radius: 5px;
-  box-shadow: 0 5px 10px 0 black;
+  
+  
+ 
+  
 }
 
 .calc {
