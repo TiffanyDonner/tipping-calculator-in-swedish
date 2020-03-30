@@ -43,19 +43,50 @@ The Tip Calculator takes out the guesswork and the math by walking the user thro
     - The project uses **Javascript** to calculate and navigate the application.
 
 ## Testing
-During testing the users found the application easy to get to and navigate through. Very straight forward. 
-- User were only given the instruction to open the application a follow the steps.
+Tested CSS in w3 (2) erros found:
+1. Bad value: Can not include (2) fonts in one attribute link... | is not allowed.
+2. Element navigation not allowed as child of element div in this context.
+
+## User Testing
+During testing the users found the application easy to get to and navigate through. Very straight forward.
+- User were instructed. To open the link and check that the layout matched the provided image of a correct layout of the application. And to comment on any differences.
+- Next, the user was read the introduction on each page, and to input a fictitous items into the feilds as they navigated.
+- They were asked to send feed-back on:
+    1. Whether or not the discriptions were clear on what information the application was asking for.
+            - One user found the Total Per Person on the last tab a bit confusing. I proceeded to update the discription on the Number of People tab.
+    2. Did they find the appication hard to navigate?
+            - Users found the application easy to navigate
+    3. Would it be something they would use in the future and why?
+            - One user though it was a "fun idea"
+            - Another said they would definitly use it in the future and they don't even live in Sweden.
+                    -Will be keeping an English version
+    4. What was there over all impression?
+            - Clean
+            - Simple
+            - Great!
 
 ### Devices Tested
-✓ Both Windows and apple computers
-✓ Samsung Galaxy Device
+✓ Site is accesible to everyone.
+✓ Both Windows and Apple computers in:
+    - Chrome
+    - Firefox
+    - Microsoft Edge
+✓ Samsung:
+    - Galaxy S9
+    - Galaxy S9 Plus
+    - Galaxy S5 Note
 ✓ Catapilar Android Device
-✓ iPhone 10
+✓ Apple:
+    -iPhone 11
+    -iPhone 10
 
 ## Deployment
 In GitHub, I navigated to the [repository](https://github.com/TiffanyDonner/tipping-calculator-in-swedish/) and clicked Settings. Within Settings, I navigated to the Source section within the Github Pages section. From the dropdown menu, selected master branch and then clicked Save. Git hub created a [link](https://tiffanydonner.github.io/tipping-calculator-in-swedish/) to where the site is hosted/published.
   
 ## Credits
+Background Image:
+https://www.pickpik.com/overhead-shot-plates-food-dinner-setting-76669
+
 Calculator code guide:
 https://codepen.io/cphemm/pen/reNwWd
 
