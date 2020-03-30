@@ -27,23 +27,23 @@
 		<!-- One "tab" for each step in the form: -->
 		<div class="tab">How much is your bill? Tipping is not mandatory, however in the United States the staff relys
 			on tips for their income...
-			<p><input type="number" id="amount" placeholder="$ Bill Amount"></p>
+			<p class="field"><input type="number" id="amount" placeholder="$ Bill Amount"></p>
 		</div>
 
 		<div class="tab">How was the service? The tip is related only to the person serving you. If you ever returned
 			would you ask for the same server...
-			<p><select id="tip">
-				<option value="0.05">Never returning! (5%)</option>
-				<option value="0.1">Only if I had no choice. (10%)</option>
-				<option value="0.15">Maybe. They were nice. (15%)</option>
-				<option value="0.2">Yes. They were good. (20%)</option>
-				<option value="0.3">They were great! I want them to know it. (30%)</option>
-                <option value="0.4">Outstanding! I want them to remember me. (40%)</option>
+			<p class="field"><select id="tip">
+				<option value="0.05">5% Never returning!</option>
+				<option value="0.1">10% Only if I had no choice.</option>
+				<option value="0.15">15% Maybe. They were nice.</option>
+				<option value="0.2">20% Yes. They were good.</option>
+				<option value="0.3">30% They were great!</option>
+                <option value="0.4">40% Outstanding! Remember me!</option>
 			</select></p>
 		</div>
 
 		<div class="tab">How many people are sharing the bill? If sharing, the calculator will split the tip and bill up evenly between the number of people. 
-			<p> <select id="numberPeople">
+			<p class="field"> <select id="numberPeople">
 				<option value="1">1</option>
 				<option value="2">2</option>
 				<option value="3">3</option>
@@ -71,8 +71,8 @@
 			</div>
 		</div>
         <!--Displayed buttons for next and previous-->
-		<div style="overflow:auto;">
-			<div style="float:right;">
+		<div>
+			<div>
 				<button class="calc" type="button" id="prevBtn" onclick="nextPrev(-1)">Previous</button>
 				<button class="calc" type="button" id="nextBtn" onclick="nextPrev(1)">Next</button>
 			</div>
