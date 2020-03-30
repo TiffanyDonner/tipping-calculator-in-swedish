@@ -43,9 +43,19 @@ The Tip Calculator takes out the guesswork and the math by walking the user thro
     - The project uses **Javascript** to calculate and navigate the application.
 
 ## Testing
-Tested CSS in w3 (2) erros found:
+Tested CSS in w3 (2) erros found and corrected:
 1. Bad value: Can not include (2) fonts in one attribute link... | is not allowed.
+    - Corrected by dividing up the (2) fonts into seperate links in Head.
 2. Element navigation not allowed as child of element div in this context.
+    - Changed the navigation tag to nav.
+
+W3C CSS Validator results: No errors found!
+
+W3 Link Validator results: Links,Valid links! Anchors, Found 13 anchors. Valid anchors! Checked 1 document in 7.18 seconds.
+
+W3C Internationalization Checker
+1. (5) "<b>" tags without class
+    - Added the html class of totals. Since they related to the totals on the final tab.
 
 ## User Testing
 During testing the users found the application easy to get to and navigate through. Very straight forward.
@@ -54,7 +64,7 @@ During testing the users found the application easy to get to and navigate throu
 - They were asked to send feed-back on:
     1. Whether or not the discriptions were clear on what information the application was asking for.
             - One user found the Total Per Person on the last tab a bit confusing. I proceeded to update the discription on the Number of People tab.
-    2. Did they find the appication hard to navigate?
+    2. Did they find the appication hard to navigate? Do the buttons work? Was it easy to tell where you were in the process? Do the calulations work?
             - Users found the application easy to navigate
     3. Would it be something they would use in the future and why?
             - One user though it was a "fun idea"
@@ -80,9 +90,28 @@ During testing the users found the application easy to get to and navigate throu
     -iPhone 11
     -iPhone 10
 
-## Deployment
-In GitHub, I navigated to the [repository](https://github.com/TiffanyDonner/tipping-calculator-in-swedish/) and clicked Settings. Within Settings, I navigated to the Source section within the Github Pages section. From the dropdown menu, selected master branch and then clicked Save. Git hub created a [link](https://tiffanydonner.github.io/tipping-calculator-in-swedish/) to where the site is hosted/published.
-  
+## GitHub Deployment with GitHub Pages
+###Create a new [repository](https://github.com/TiffanyDonner/tipping-calculator-in-swedish/). 
+1. In the upper right corner use the + to bring down the menu. And select Repository.
+2. Select your account from the owner dropdown menu.
+3. Give your respository a name and optional discription.
+4. Choose a repository visbility and initialize this repository with a README.
+5. Click Create Repository
+
+###Create Your Website
+1. In github navigate to your repository.
+2. Click on the green Gitpod button to open your development enviroment.
+3. Create a index.html in the root with what you want displayed on the main page of your site.
+4. Push your files and folders while updating git by adding files with commit messages to keep you organized through development.
+
+###Deployment to GitHub Pages
+1. In GitHub, navigate to Settings. Within Settings, navigate to the Source section under Github Pages. 
+2. From the dropdown menu, selected master branch and then clicked Save. 
+3. Git hub creates a [link](https://tiffanydonner.github.io/tipping-calculator-in-swedish/) to where the site is hosted/published.
+
+### Updating
+1. Any updates that are commited and push to GitHub will be updated to GitHub Pages.
+
 ## Credits
 Background Image:
 https://www.pickpik.com/overhead-shot-plates-food-dinner-setting-76669
@@ -90,5 +119,5 @@ https://www.pickpik.com/overhead-shot-plates-food-dinner-setting-76669
 Calculator code guide:
 https://codepen.io/cphemm/pen/reNwWd
 
-Form Wizard
+Form Wizard:
 https://www.w3schools.com/howto/howto_js_form_steps.asp
