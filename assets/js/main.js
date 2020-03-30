@@ -4,7 +4,7 @@ function hideTip() {
     document.getElementById("multiple").style.display = "none";
 }
 
-/*/Calulation for the Tip*/
+/*Calulation for the Tip*/
 function calculateTip() {
 
     let billAmount = document.getElementById("amount").value;
