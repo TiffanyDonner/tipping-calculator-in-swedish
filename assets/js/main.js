@@ -1,41 +1,55 @@
 /*Javascript Tip Calculator - Carolyn Hemmings (CodePen)*/
-/* Hide tip amount on load*/
-function hideTip() {
-    document.getElementById("single").style.display = "none";
-    document.getElementById("multiple").style.display = "none";
-}
-
 /*Calulation for the Tip*/
 function calculateTip() {
-    /* Pull values entered in fields by id and let them be variables*/
+    /* Pull values entered in fields by id and assign them to variables*/
     let billAmount = document.getElementById("amount").value;
     let tipPercentage = document.getElementById("tip").value;
     let numberOfPeople = document.getElementById("numberPeople").value;
 
-    /* Calculate the total tip.*/
+    /* Calculate the total tip.
+    The tip (tiptotal) equals varible billAmount * tipPercentage from above */
     let tipTotal = (billAmount * tipPercentage);
     /*keep only 2 decimal places*/
     tipTotal = tipTotal.toFixed(2);
 
-    /*If there is more than one person display (multiple). Divide bill amount and tip total by the number of people. */
+    /*If there is more than one person display (multiple). Divide bill amount and 
+    tip total by the number of people. Assign varibles */
     if (numberOfPeople > 1) {
         document.getElementById("multiple").style.display = "block";
         let bill = (billAmount / numberOfPeople);
         let tip = (tipTotal / numberOfPeople);
+        /* Pull id totalTipMultiple to display only 2 decimal spaces*/
         document.getElementById("totalTipMultiple").innerHTML = tip.toFixed(2);
 
+        /* Ruturn only numbers from bill added to tip. Assign to varible amount each. 
+        Which is "Total Per Person" on HTML page. */
         let amountEach = parseFloat(bill) + parseFloat(tip);
+        /* Pull id totalAmountEach to display only 2 decimal spaces*/
         document.getElementById("totalAmountEach").innerHTML = amountEach.toFixed(2);
 
+        /* Ruturn only numbers from billAmount added to tipTotal. Assign to varible. 
+        Which is "Bill Total" on HTML page. */
         let multipleTotal = parseFloat(billAmount) + parseFloat(tipTotal);
-        document.getElementById("billTotalmultiple").innerHTML = multipleTotal.toFixed(2);
+        /* Pull id billTotalMultiple to display only 2 decimal spaces*/
+        document.getElementById("billTotalMultiple").innerHTML = multipleTotal.toFixed(2);
 
+    /* Else there is one person display (single). */
     } else {
         document.getElementById("single").style.display = "block";
+        /* Ruturn only numbers from bill added to tip. Assign to varible amount each. 
+        Which is "Total Per Person" on HTML page. */
         let singleTotal = (parseFloat(billAmount) + parseFloat(tipTotal));
+        /* Pull id tipAmount to and assign to tipTotal*/
         document.getElementById("tipAmount").innerHTML = tipTotal;
+        /* Pull id billTotal to display only 2 decimal spaces*/
         document.getElementById("billTotal").innerHTML = singleTotal.toFixed(2);
     }
+}
+
+/* Hide tip amounts on load*/
+function hideTip() {
+    document.getElementById("single").style.display = "none";
+    document.getElementById("multiple").style.display = "none";
 }
 
 hideTip();
@@ -50,14 +64,18 @@ function showTab(nextTab) {
     let displayTab = document.getElementsByClassName("tab");
     displayTab[nextTab].style.display = "block";
     /* ... and fix the Previous/Next buttons:*/
+    /* If nexttab equals zero. Then do not display the Previous Button */
     if (nextTab == 0) {
         document.getElementById("prevBtn").style.display = "none";
+    /* Else display previous button inline with next button */
     } else {
         document.getElementById("prevBtn").style.display = "inline";
     }
+    /* If you come to the end of the tabs the nextBtn button displays Resart  */
     if (nextTab == (displayTab.length - 1)) {
         document.getElementById("nextBtn").innerHTML = "Restart";
         calculateTip();
+    /* Else nextBtn button displays Next */
     } else {
         document.getElementById("nextBtn").innerHTML = "Next";
     }
