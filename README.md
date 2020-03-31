@@ -1,3 +1,4 @@
+![Tip Calculator Image](https://github.com/TiffanyDonner/tipping-calculator-in-swedish/blob/master/assets/images/tipHeading.PNG)
 # Tip Calculator for Swedes
 A big question I often get from my Swedish friends when they are traveling to the USA is... 
 How do we know how much to tip at a restaurant?
@@ -92,20 +93,20 @@ During testing the users found the application easy to get to and navigate throu
 
 ## GitHub Deployment with GitHub Pages
 
-###Create a new [repository](https://github.com/TiffanyDonner/tipping-calculator-in-swedish/). 
+### Create a new [repository](https://github.com/TiffanyDonner/tipping-calculator-in-swedish/). 
 1. In the upper right corner use the + to bring down the menu. And select Repository.
 2. Select your account from the owner dropdown menu.
 3. Give your respository a name and optional discription.
 4. Choose a repository visbility and initialize this repository with a README.
 5. Click Create Repository
 
-###Create Your Website
+### Create Your Website
 1. In github navigate to your repository.
 2. Click on the green Gitpod button to open your development enviroment.
 3. Create a index.html in the root with what you want displayed on the main page of your site.
 4. Push your files and folders while updating git by adding files with commit messages to keep you organized through development.
 
-###Deployment to GitHub Pages
+### Deployment to GitHub Pages
 1. In GitHub, navigate to Settings. Within Settings, navigate to the Source section under Github Pages. 
 2. From the dropdown menu, selected master branch and then clicked Save. 
 3. Git hub creates a [link](https://tiffanydonner.github.io/tipping-calculator-in-swedish/) to where the site is hosted/published.
