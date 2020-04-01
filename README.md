@@ -6,10 +6,15 @@ As a former bartender, I feel that tipping is more of a feeling than a number. T
 to help give you a solution but helps you decided how you feel about the percentage of the bill you are leaving. 
 Also, why you are leaving a tip at all...
 
+[View Live Demo Here](https://tiffanydonner.github.io/tipping-calculator-in-swedish/)
+
 ## UX
-The user of this application needs clarity of why and how to leave a tip to a server in an American restaurant.
-This application allows the user quick access and utilizes a wizard workflow to navigate a user through each step easily so they are not overwhelmed. For the experience for the user the application will be in Swedish, however 
-for this project, it will be displayed in English.
+The ideal user of this application is a Swedish tourist in the United States.
+- The user needs clarification of "why and how" to leave a tip for a server in an restaurant while they are abroad.
+
+This application allows the user quick access and utilizes a wizard workflow to navigate a user through each step easily so they are not overwhelmed. 
+
+For the purpose of this project the application will be in English, however the final result will be translated to Swedish.
 
 ### User Stories
 In Sweden we do not tip, so why do I need to leave a tip when I travel to America?
@@ -22,7 +27,7 @@ When traveling on business I need a calculator that can separate the bill.
 ![How Many People](https://github.com/TiffanyDonner/tip-calculator-project-final/blob/master/assets/images/sharingBill.PNG "Number of People Image")
 
 ### Wireframes
-![Website Plan](https://github.com/TiffanyDonner/tip-calculator-project-final/blob/master/assets/images/tipCalculatorWireframes.PNG "Wireframes Image")
+![Website Plan](https://github.com/TiffanyDonner/tip-calculator-project-final/blob/master/assets/images/tipCalculatorWireframesFinal.PNG "Wireframes Image")
 
 ## Features
 The Tip Calculator takes out the guesswork and the math by walking the user through 4 simple steps. 
