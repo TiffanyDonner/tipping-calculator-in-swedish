@@ -17,8 +17,9 @@ This application allows the user quick access and utilizes a wizard workflow to 
 For the purpose of this project the application will be in English, however the final result will be translated to Swedish.
 
 ### User Stories
-In Sweden we do not tip, so why do I need to leave a tip when I travel to America?
-![Why Tip](https://github.com/TiffanyDonner/tip-calculator-project-final/blob/master/assets/images/billAmount.PNG "Why Tip Image")
+In Sweden we do not tip, so why do I need to leave a tip when I travel to America? | As a tourist in the US, I know I need to tip, but I often get confused about how much...
+-----------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------
+![Why Tip](https://github.com/TiffanyDonner/tip-calculator-project-final/blob/master/assets/images/billAmount.PNG "Why Tip Image") | ![What to Tip](https://github.com/TiffanyDonner/tip-calculator-project-final/blob/master/assets/images/tipPercentage.PNG "What to Tip Image")
   
 As a tourist in the US, I know I need to tip, but I often get confused about how much...
 ![What to Tip](https://github.com/TiffanyDonner/tip-calculator-project-final/blob/master/assets/images/tipPercentage.PNG "What to Tip Image")
