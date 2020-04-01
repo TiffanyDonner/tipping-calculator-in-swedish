@@ -49,9 +49,9 @@ body {
      align-items: center; /* Centers items to the middle of section*/
 }
  .field {
-     justify-content: center; /* Move content to center*/
      height: 40px; /* Height of field*/
      width: 100%; /* Full width field */
+     padding-left: 10px;
      font-size: 0.9em; /* Text size of entry field*/
      border-radius: 5px; /* Adds a radius to border of fields */
 }
@@ -78,6 +78,7 @@ body {
  input {
      width: 80%;
      height: 30px; /* Height of input*/
+     padding-left: 10px;
      background-color: #ffffff;
      border-radius: 5px; /* Adds a radius to border input field */
      font-size: 1.17em; /* Text size of input field*/
