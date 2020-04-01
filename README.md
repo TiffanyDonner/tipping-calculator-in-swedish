@@ -27,7 +27,7 @@ When traveling on business I need a calculator that can separate the bill.
 ![How Many People](https://github.com/TiffanyDonner/tip-calculator-project-final/blob/master/assets/images/sharingBill.PNG "Number of People Image")
 
 ### Wireframes
-![Website Plan](https://github.com/TiffanyDonner/tip-calculator-project-final/blob/master/assets/images/tipCalculatorWireframesFinal.PNG "Wireframes Image")
+![Website Plan](https://github.com/TiffanyDonner/tipping-calculator-in-swedish/blob/master/assets/images/tipCalculatorWireframesFinal.PNG "Wireframes Image")
 
 ## Features
 The Tip Calculator takes out the guesswork and the math by walking the user through 4 simple steps. 
